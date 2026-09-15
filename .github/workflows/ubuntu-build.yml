@@ -14,6 +14,8 @@ jobs:
         AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     uses: qualcomm-qrb-ros/qrb_ros_gh_actions/.github/workflows/ubuntu-build.yml@main
+    with:
+      ros-distro: lyrical
     # with:
     #   # QRB ROS dependency
     #   dependencies: "qualcomm-qrb-ros/qrb_ros_transport qualcomm-qrb-ros/lib_mem_dmabuf"
